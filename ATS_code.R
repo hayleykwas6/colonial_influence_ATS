@@ -70,7 +70,7 @@ nmds_result <- nmds_2d
 ## ===== Check for Co-linearity =====
 nmds1_score <- scores(nmds_result)[, 1]
 
-lm_model <- lm(nmds1_score ~ GDPperCap + Mil_Per + Edu_Per + Age + NatResRents + 
+lm_model <- lm(nmds1_score ~ GDP + GDPperCap + Mil_Total + Mil_Per + Edu_Total + Edu_Per + Age + NatResRents + 
                  Colonization.Status + In.NATO + Continent, 
                data = df_use,
                na.action = na.omit)  # make the omission explicit
