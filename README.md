@@ -10,7 +10,7 @@ history is the strongest predictor of participation among the variables tested.
 ## 📊 Key Findings
 - 🗺️ Three distinct clusters of ATS participation identified across 204 States
 - 🏛️ Colonial status is the strongest predictor of ATS participation (R² = 0.084, p < 0.001)
-- 🌐 NATO membership, continent, and State age are significant secondary predictors
+- 🌐 NATO membership, BRICS membership, continent, and State age are significant secondary predictors
 - 💰 Wealth and spending patterns show no significant association with participation
 
 ## 🗂️ Repository Structure
@@ -29,7 +29,7 @@ ATS_participation/
 ```r
 install.packages(c("vegan", "car", "dplyr", "ggplot2", 
                    "factoextra", "cluster", "patchwork",
-                   "countrycode", "maps"))
+                   "countrycode", "maps", "mice"))
 ```
 
 ## 🚀 Getting Started
@@ -65,6 +65,7 @@ five sections:
 | `CCAMLR` | CCAMLR membership (Member, Acceding, Neither) |
 | `Colonization.Status` | Colonial history (Colonizer, Colonized, Both, Neither) |
 | `In.NATO` | NATO membership (Yes, No, Partner) |
+| `In.BRICS` | BRICS membership (Yes, No) |
 | `Continent` | Continent |
 | `IndepEstYr` | Year of independence or establishment |
 | `Age` | State age (years) |
