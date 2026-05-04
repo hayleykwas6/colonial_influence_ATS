@@ -16,7 +16,7 @@ history is the strongest predictor of participation among the variables tested.
 ## 🗂️ Repository Structure
 ```r
 ATS_participation/
-├── 📄 ATSData.csv        # Country-level data on ATS participation and predictor variables
+├── 📄 ATS_Data.csv        # Country-level data on ATS participation and predictor variables
 ├── 📄 ATS_code.R         # Complete analysis script
 └── 📄 README.md          # This file
 ```
