@@ -41,7 +41,7 @@ cd ATS_participation
 
 **Step 2: Update the Data Path**
 
-In `ATS_code.R`, update the file path on line 28 to match your local directory:
+In `ATS_code.R`, update the file path to match your local directory:
 ```r
 df <- read.csv("your/path/here/ATSData.csv")
 ```
