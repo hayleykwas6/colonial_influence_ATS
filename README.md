@@ -5,12 +5,12 @@ This repository contains the data and reproducible code for the research present
 
 Our study examines global patterns of Antarctic Treaty System (ATS) participation, 
 identifying three distinct clusters of State engagement and demonstrating that colonial 
-history is the strongest predictor of participation among the variables tested.
+history is the strongest correlate of participation among the variables tested.
 
 ## 📊 Key Findings
 - 🗺️ Three distinct clusters of ATS participation identified across 204 States
-- 🏛️ Colonial status is the strongest predictor of ATS participation (R² = 0.084, p < 0.001)
-- 🌐 NATO membership, BRICS membership, continent, and State age are significant secondary predictors
+- 🏛️ Colonial status explained the most variance of ATS participation
+- 🌐 NATO membership, BRICS membership, continent, and State age are also significant explainers
 - 💰 Wealth and spending patterns show no significant association with participation
 
 ## 🗂️ Repository Structure
