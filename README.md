@@ -42,14 +42,14 @@ cd ATS_participation
 
 **Step 2: Update the Data Path**
 
-In `ATS_code.R`, update the file path to match your local directory:
+In `ATS_Code.R`, update the file path to match your local directory:
 ```r
-df <- read.csv("your/path/here/ATSData.csv")
+df <- read.csv("your/path/here/ATS_Data.csv")
 ```
 
 **Step 3: Run the Analysis**
 
-Open `ATS_code.R` in R and run sequentially. The script is organized into 
+Open `ATS_Code.R` in R and run sequentially. The script is organized into 
 five sections:
 1. Load and prep data
 2. Create and analyze Gower distance matrix (NMDS + PERMANOVA)
@@ -58,7 +58,7 @@ five sections:
 5. Visualize global clusters
 
 ## 📋 Data Description
-`ATSData.csv` contains 204 countries with the following variables:
+`ATS_Data.csv` contains 204 countries with the following variables:
 
 | Variable | Description |
 |---|---|
@@ -97,7 +97,7 @@ the period of peak colonial expansion and its aftermath.
 
 📧 Corresponding author contact: hayley.kwasniewski@colorado.edu
 
-🏛️ Affiliations: University of Colorado Boulder, Institute for Arctic and Alpine Research (INSTAAR)
+🏛️ Affiliations: University of Colorado Boulder, Institute for Arctic and Alpine Research (INSTAAR), Center for Oceans at Conservation International
 
 ---
 *Last updated: April 2026*
