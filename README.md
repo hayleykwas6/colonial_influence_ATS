@@ -11,7 +11,7 @@ history is the strongest correlate of participation among the variables tested.
 - 🗺️ Three distinct clusters of ATS participation identified across 204 States
 - 🏛️ Colonial status explained the most variance of ATS participation
 - 🌐 NATO membership, BRICS membership, continent, and State age are also significant explainers
-- 🪖 Military spending (% of budget) significantly correlates with ATS particiption, but did not signficantly drive clustering
+- 🪖 Military spending (% of GDP) significantly correlates with ATS particiption, but did not signficantly drive clustering
 - 💰 Other wealth and spending patterns show no significant association with participation
 
 ## 🗂️ Repository Structure
