@@ -4,8 +4,8 @@
 This repository contains the data and reproducible code for the research presented.
 
 Our study examines global patterns of Antarctic Treaty System (ATS) participation, 
-identifying three distinct clusters of State engagement and demonstrating that colonial 
-history is the strongest correlate of participation among the variables tested.
+identifying four distinct clusters of State engagement and demonstrating that colonial 
+history is a strong correlate with participation among the variables tested.
 
 ## 📊 Key Findings
 - 🗺️ Four distinct clusters of ATS participation identified across 204 States
