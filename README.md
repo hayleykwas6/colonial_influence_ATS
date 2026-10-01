@@ -9,7 +9,7 @@ history is a strong correlate with participation among the variables tested.
 
 ## 📊 Key Findings
 - 🗺️ Four distinct clusters of ATS participation identified across 204 States
-- 🏛️ Colonial status explained the most variance of ATS participation
+- 🏛️ Colonial status consistently and significantly explained variance of ATS participation
 - 🌐 NATO membership, BRICS membership, continent, and State age are also significant explainers in at least one model presented 
 - 🪖 Military spending (% of GDP) significantly correlates with ATS participation, but did not significantly explain variance in AT/CCAMLR participation
 - 💰 Other wealth and spending patterns show no significant association with participation
