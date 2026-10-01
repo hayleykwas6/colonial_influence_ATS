@@ -23,7 +23,6 @@ library(vegan)
 library(car)
 library(dplyr)
 library(ggplot2)
-library(factoextra)
 library(cluster)
 library(patchwork)
 library(countrycode)
@@ -31,7 +30,7 @@ library(maps)
 library(mice)
 
 ## ===== Read data =====
-data_folder  <- "~/Documents/Publications/ATSColonialism" # Update path to load data
+data_folder  <- "~/Documents/" # Update path to load data
 
 df <- read.csv(file.path(data_folder, "ATS_Data.csv"))
 
@@ -106,7 +105,7 @@ vars_used <- c("GDPperCap", "Edu_Per", "Mil_Per", "NatResRents",
                "Colonization.Status", "InNATO", "InBRICS", "Age", "Continent")
 
 complete_rows <- complete.cases(df_use[, vars_used])
-# REVIEW: is missingness random?
+# check: is missingness random?
 print(table(Dropped = !complete_rows, AT = df_use$AT))
 print(table(Dropped = !complete_rows, CCAMLR = df_use$CCAMLR))
 print(table(Dropped = !complete_rows, Colonization.Status = df_use$Colonization.Status))
@@ -277,7 +276,7 @@ adonis_binned <- adonis2(dist_matrix_1 ~ GDPperCap_bin + Edu_Per_bin + Mil_Per_b
 print(adonis_binned)
 
 ###
-# CHECK: binned and imputation approaches aligned with complete cases (na.omit) 
+# Check: binned and imputation approaches align with complete cases (na.omit) 
 # complete cases is primary result since all three approaches generally converge on the 
 # same significant predictors
 ###
@@ -377,9 +376,6 @@ print(cluster_summary_4)
 
 ## ===== Check Cluster Validity =====
 # determine differences between clusters using PERMANOVA
-# REVIEW: this test is circular (clusters were built from this same matrix, so it is
-# guaranteed to be significant). Silhouette = 1 for clusters 1 and 3 because every
-# member has an identical profile. Report as description, not as validation.
 set.seed(123)
 cluster_permanova <- adonis2(dist_matrix_1 ~ Cluster4,
                              data         = df_use,
