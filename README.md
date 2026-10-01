@@ -8,9 +8,9 @@ identifying three distinct clusters of State engagement and demonstrating that c
 history is the strongest correlate of participation among the variables tested.
 
 ## 📊 Key Findings
-- 🗺️ Three distinct clusters of ATS participation identified across 204 States
+- 🗺️ Four distinct clusters of ATS participation identified across 204 States
 - 🏛️ Colonial status explained the most variance of ATS participation
-- 🌐 NATO membership, BRICS membership, continent, and State age are also significant explainers
+- 🌐 NATO membership, BRICS membership, continent, and State age are also significant explainers in at least one model presented 
 - 🪖 Military spending (% of GDP) significantly correlates with ATS participation, but did not significantly explain variance in AT/CCAMLR participation
 - 💰 Other wealth and spending patterns show no significant association with participation
 
@@ -29,7 +29,7 @@ ATS_participation
 **Required R Packages**
 ```r
 install.packages(c("vegan", "car", "dplyr", "ggplot2", 
-                   "factoextra", "cluster", "patchwork",
+                   "patchwork", "ragg", "magick", "cluster",
                    "countrycode", "maps", "mice"))
 ```
 
@@ -51,11 +51,12 @@ df <- read.csv("your/path/here/ATS_Data.csv")
 
 Open `ATS_Code.R` in R and run sequentially. The script is organized into 
 five sections:
-1. Load and prep data
-2. Create and analyze Gower distance matrix (NMDS + PERMANOVA)
-3. Conduct cluster analysis
-4. Identify drivers of clusters
-5. Visualize global clusters
+1. Load and prep data for analysis
+2. Create and analyze Gower distance matrix
+3. Run PERMANOVAs with three difference approaches
+4. Conduct cluster analysis
+5. Identify drivers of clusters
+6. Visualize global clusters
 
 ## 📋 Data Description
 `ATS_Data.csv` contains 204 countries with the following variables:
@@ -65,8 +66,8 @@ five sections:
 | `AT` | Antarctic Treaty status (CP, NonCP, Neither) |
 | `CCAMLR` | CCAMLR membership (Member, Acceding, Neither) |
 | `Colonization.Status` | Colonial history (Colonizer, Colonized, Both, Neither) |
-| `In.NATO` | NATO membership (Yes, No, Partner) |
-| `In.BRICS` | BRICS membership (Yes, No) |
+| `InNATO` | NATO membership (Yes, No, Partner) |
+| `InBRICS` | BRICS membership (Yes, No) |
 | `Continent` | Continent |
 | `IndepEstYr` | Year of independence or establishment |
 | `Age` | State age (years) |
@@ -84,9 +85,9 @@ the period of peak colonial expansion and its aftermath.
 ## 🔬 Methods Summary
 - Gower dissimilarity matrix constructed from AT and CCAMLR status
 - NMDS ordination (k=2)
-- Hierarchical clustering using Ward's method (k=3)
+- Hierarchical clustering using Ward's method (k=4)
 - PERMANOVA with 9,999 permutations (vegan::adonis2)
-- Collinearity assessed via VIF (all values < 5.5)
+- Collinearity assessed via VIF
 
 ## 📚 Associated Publication
 **Citation:**
